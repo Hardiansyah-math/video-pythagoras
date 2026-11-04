@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teorema Pythagoras — Matematika Kelas 8</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#d3e7fd;color:#0f2a4a}
+.wrap{max-width:900px;margin:0 auto;padding:24px 16px 48px}
+h1{color:#004e9e;margin:8px 0 4px}.sub{color:#33567a;margin:0 0 16px}
+video{width:100%;border-radius:12px;background:#000}
+.chapters{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.chapters button{border:1px solid #005eb8;background:#fff;color:#005eb8;border-radius:999px;padding:8px 12px;cursor:pointer;font-size:14px}
+.chapters button:hover{background:#005eb8;color:#fff}
+.card{background:#fff;border:1px solid #bcd6f5;border-radius:12px;padding:16px}
+a.dl{display:inline-block;background:#005eb8;color:#fff;text-decoration:none;padding:10px 16px;border-radius:8px;margin-top:12px}
+.err{display:none;background:#fee2e2;color:#991b1b;border-radius:8px;padding:12px;margin-top:12px}
+footer{color:#33567a;font-size:13px;margin-top:24px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Teorema Pythagoras</h1>
+<p class="sub">Matematika Kelas 8 &bull; Durasi 5 menit 53 detik &bull; Narasi Bahasa Indonesia &bull; Hardiansyah Math</p>
+<video id="v" controls preload="metadata" playsinline>
+<source src="video-teorema-pythagoras-kelas-8.mp4" type="video/mp4">
+</video>
+<div class="err" id="err">Video tidak dapat diputar. Pastikan file <b>video-teorema-pythagoras-kelas-8.mp4</b> berada di folder yang sama dengan file HTML ini, lalu muat ulang halaman.</div>
+<p><b>Bab:</b> klik untuk melompat ke bagian yang diinginkan.</p>
+<div class="chapters">
+<button data-t="0">Pembuka 0:00</button>
+<button data-t="29">Konsep Dasar 0:29</button>
+<button data-t="59">Rumus Utama 0:59</button>
+<button data-t="97">Tripel Pythagoras 1:37</button>
+<button data-t="143">Segitiga Istimewa 2:23</button>
+<button data-t="184">Soal Tangga 3:04</button>
+<button data-t="220">Soal Kapal 3:40</button>
+<button data-t="265">Diagonal &amp; Layang-layang 4:25</button>
+<button data-t="311">Penutup 5:11</button>
+</div>
+<div class="card">
+<b>Yang dipelajari:</b>
+<ul>
+<li>Segitiga siku-siku dan hipotenusa (sisi miring)</li>
+<li>Rumus utama <b>c&sup2; = a&sup2; + b&sup2;</b> dan tiga bentuk turunannya</li>
+<li>Tripel Pythagoras: 3, 4, 5 &bull; 5, 12, 13 &bull; 7, 24, 25 beserta kelipatannya</li>
+<li>Segitiga istimewa 45&deg;&ndash;45&deg;&ndash;90&deg; dan 30&deg;&ndash;60&deg;&ndash;90&deg;</li>
+<li>Soal kontekstual: tangga 8 m, kapal 150 km, diagonal lapangan 20 m, layang-layang 40 m</li>
+<li>Tips: gambar dulu sketsanya, baru hitung rumusnya</li>
+</ul>
+<a class="dl" href="video-teorema-pythagoras-kelas-8.mp4" download>&#11015; Unduh video (MP4, 6,9 MB)</a>
+</div>
+<footer>&copy; 2026 Hardiansyah Math</footer>
+</div>
+<script>
+var v=document.getElementById('v');
+document.querySelectorAll('.chapters button').forEach(function(b){
+  b.addEventListener('click',function(){v.currentTime=parseFloat(b.dataset.t);v.play();});
+});
+v.addEventListener('error',function(){document.getElementById('err').style.display='block';});
+</script>
+</body>
+</html>
